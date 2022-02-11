@@ -8,6 +8,7 @@ xhr.onload = function(){
 
     // All books
     var newContent = ''; // Empty string for innerHTML to be pased through
+    // newContent += '<p>' + responseObject.items[0].volumeInfo.title + '</p>';  // Test to ensure the first array object is being picked up
 
     document.getElementById("books").innerHTML = newContent;  // Update index page with new content
 
