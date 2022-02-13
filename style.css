@@ -67,5 +67,22 @@ img.card-img-top {
     }
     img.img-fluid.rounded-start {        
         margin: 20px;
+        width: 90%;
+    }
+    h6.card-title {
+        font-size: 0.8rem;
+    }
+    h7.card-title {
+        font-size: 0.7rem;
+    }
+    span.card-text.d-block {
+        font-size: 10px;
+    }
+    span.card-text {
+        font-size: 10px;
+    }
+
+    p.card-text {
+        font-size: 12px;
     }
 }
