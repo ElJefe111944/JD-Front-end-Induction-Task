@@ -42,3 +42,14 @@ img.img-fluid.rounded-start {
     padding: 20px;
 }
 
+img.card-img-top {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.card.features {
+    margin-top: 20px;
+}
+
