@@ -35,3 +35,10 @@ img.img-fluid.rounded-start {
     margin-top: 25px;
     margin-left: 10px;
 }
+
+/*- Features -*/
+.col-md-4.order-first.order-md-last {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
