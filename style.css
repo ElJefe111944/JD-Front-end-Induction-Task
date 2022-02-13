@@ -33,8 +33,10 @@ p.card-text {
 }
 
 img.img-fluid.rounded-start {        
-    margin-top: 25px;
+    margin-top: 45px;
     margin-left: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 
 /*- Features -*/
@@ -44,7 +46,7 @@ img.img-fluid.rounded-start {
 }
 
 img.card-img-top {
-    width: 60%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
@@ -56,6 +58,27 @@ img.card-img-top {
 
 
 /*- Media Queries -*/
+@media (max-width:1200px) {
+    h6.card-title {
+        font-size: 0.9rem;
+    }
+    h7.card-title {
+        font-size: 0.8rem;
+    }
+    span.card-text.d-block {
+        font-size: 12px;
+    }
+    span.card-text {
+        font-size: 12px;
+    }
+
+    p.card-text {
+        font-size: 12px;
+    }
+    
+}
+
+
 @media (max-width: 992px){  
     div#books {
         display: grid;
@@ -83,6 +106,6 @@ img.card-img-top {
     }
 
     p.card-text {
-        font-size: 12px;
+        font-size: 11px;
     }
 }

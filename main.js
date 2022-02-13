@@ -17,23 +17,23 @@ function renderFeatures(responseObject){
 			newFeatures += '<div class="card features">';
 			newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '<div class="card-body">';
-			newFeatures += '<h6 class="card-title">' + responseObject.items[i].volumeInfo.title + '</h6>';
+			newFeatures += '<h6 class="card-title text-center">' + responseObject.items[i].volumeInfo.title + '</h6>';
 			// Subtitle
 			var subtitle = responseObject.items[i].volumeInfo.subtitle;
 			// if statement to check if a subtitle exists for current item
 			if (subtitle != undefined) {
-				newContent += '<h7 class="card-title">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
+				newContent += '<h7 class="card-title text-center">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
 			}
 			// for loop for authors
-			newFeatures += '<span class="card-text"><small class="text-muted">Author(s): </small></span> ';
+			// newFeatures += '<span class="card-text"><small class="text-muted text-center">Author(s): </small></span> ';
 			for (let ii = 0; ii < responseObject.items[i].volumeInfo.authors.length; ii++) {
-				newFeatures += '<span class="card-text"><small class="text-muted">' + responseObject.items[i].volumeInfo.authors[ii] + '</small></span> ';
+				newFeatures += '<p class="card-text text-center"><small class="text-muted">Author(s): ' + responseObject.items[i].volumeInfo.authors[ii] + '</small></p> ';
 			}
 			// page count                
-			newFeatures += '<p class="card-text"><small>Number of pages: ' + responseObject.items[i].volumeInfo.pageCount + '</small></p>';
+			newFeatures += '<p class="card-text text-center"><small>Number of pages: ' + responseObject.items[i].volumeInfo.pageCount + '</small></p>';
 			// decription
 			// Substring used to restrict the description to 140 characters
-			newFeatures += '<p class="card-text">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
+			newFeatures += '<p class="card-text text-center">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
 			newFeatures += '</div>';
 			newFeatures += '</div>';
 			newFeatures += '</div>';
