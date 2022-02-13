@@ -4,13 +4,18 @@ xhr.onload = function(){
     // console.log(xhr.responseText);  // Test to verify that API has been retrived
     var responseObject = JSON.parse(xhr.responseText);  // Convert JSON data from string to a javascript object 
 	renderItems(responseObject);  // All books rendered to html template
+	renderFeatures(responseObject);  // Last two items of array rendered in features section
 
 };
 
-    // Features
+// Features
+function renderFeatures (){
+	
+};
 
+// All books
 function renderItems(responseObject){
-	// All books
+
     var newContent = ''; // Empty string for innerHTML to be pased through
     // newContent += '<p>' + responseObject.items[0].volumeInfo.title + '</p>';  // Test to ensure the first array object is being picked up
 
