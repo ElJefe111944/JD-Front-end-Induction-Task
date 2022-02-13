@@ -29,6 +29,8 @@ function renderFeatures(responseObject){
 			for (let ii = 0; ii < responseObject.items[i].volumeInfo.authors.length; ii++) {
 				newFeatures += '<span class="card-text"><small class="text-muted">' + responseObject.items[i].volumeInfo.authors[ii] + '</small></span> ';
 			}
+			// page count                
+			newFeatures += '<p class="card-text"><small>Number of pages: ' + responseObject.items[i].volumeInfo.pageCount + '</small></p>';
 
 
 		};
@@ -69,7 +71,7 @@ function renderItems(responseObject){
 			newContent += '<span class="card-text"><small class="text-muted">' + responseObject.items[i].volumeInfo.authors[ii] + '</small></span> ';
 		}
 		// page count
-		newContent += '<p class="card-text"><small>Number of pages: ' + responseObject.items[0].volumeInfo.pageCount + '</small></p>';
+		newContent += '<p class="card-text"><small>Number of pages: ' + responseObject.items[i].volumeInfo.pageCount + '</small></p>';
 		// description
 
 		newContent += '<p class="card-text">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
