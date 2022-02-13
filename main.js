@@ -33,7 +33,7 @@ function renderItems(responseObject){
 			newContent += '<h7 class="card-title">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
 		}
 		// for loop for authors
-		newContent += '<span class="card-text"><small class="text-muted">Author(s): </small></span> ';
+		newContent += '<span class="card-text d-block"><small class="text-muted">Author(s): </small></span> ';
 		for (let ii = 0; ii < responseObject.items[i].volumeInfo.authors.length; ii++) {
 			newContent += '<span class="card-text"><small class="text-muted">' + responseObject.items[i].volumeInfo.authors[ii] + '</small></span> ';
 		}
