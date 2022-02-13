@@ -14,3 +14,24 @@ li.nav-item {
     margin-right: 10px;
     margin-left: 10px;
 }
+
+/*- All books section -*/
+div#books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.all-books {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+/*- All books card content -*/
+p.card-text {
+    font-size: 14px;
+}
+
+img.img-fluid.rounded-start {        
+    margin-top: 25px;
+    margin-left: 10px;
+}

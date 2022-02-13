@@ -56,7 +56,7 @@ function renderItems(responseObject){
     // for loop to loop through each book 
     for (let i = 0; i < responseObject.items.length -2; i++){
         // Start of card 
-        newContent += '<div class="card mb-3" id="card">';
+        newContent += '<div class="card all-books mb-3" id="card">';
 		newContent += '<div class="row g-0">';
 		newContent += '<div class="col-4">';
 		// image
