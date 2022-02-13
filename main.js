@@ -18,6 +18,12 @@ function renderFeatures(renderFeatures){
 			newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '<div class="card-body">';
 			newFeatures += '<h6 class="card-title">' + responseObject.items[i].volumeInfo.title + '</h6>';
+			// Subtitle
+			var subtitle = responseObject.items[i].volumeInfo.subtitle;
+			// if statement to check if a subtitle exists for current item
+			if (subtitle != undefined) {
+				newContent += '<h7 class="card-title">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
+			}
 
 		};
 
@@ -46,6 +52,7 @@ function renderItems(responseObject){
 		newContent += '<h6 class="card-title">' + responseObject.items[i].volumeInfo.title + '</h6>';
 		// Subtitle 
 		var subtitle = responseObject.items[i].volumeInfo.subtitle;
+		// if statement to check if a subtitle exists for current item
 		if (subtitle != undefined) {
 			newContent += '<h7 class="card-title">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
 		}
@@ -56,9 +63,9 @@ function renderItems(responseObject){
 		}
 		// page count
 		newContent += '<p class="card-text"><small>Number of pages: ' + responseObject.items[0].volumeInfo.pageCount + '</small></p>';
-		// description     
+		// description
+		     
 		newContent += '<p class="card-text">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
-
 		newContent += '</div>';
 		newContent += '</div>';
 		newContent += '</div>';
