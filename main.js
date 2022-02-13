@@ -9,8 +9,9 @@ xhr.onload = function(){
 };
 
 // Features
-function renderFeatures (){
-	
+function renderFeatures(renderFeatures){
+	var newFeatures = "";  // Empty string for innerHTML to be pased throu
+
 };
 
 // All books
