@@ -10,7 +10,14 @@ xhr.onload = function(){
 
 // Features
 function renderFeatures(renderFeatures){
-	var newFeatures = "";  // Empty string for innerHTML to be pased throu
+	var newFeatures = "";  // Empty string for innerHTML to be pased through
+
+	for(let i = 0; i < responseObject.items.length; i++){
+		if(i >= responseObject.items.length - 2){
+			
+		};
+
+	};
 
 };
 
