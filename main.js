@@ -22,7 +22,7 @@ function renderFeatures(responseObject){
 			var subtitle = responseObject.items[i].volumeInfo.subtitle;
 			// if statement to check if a subtitle exists for current item
 			if (subtitle != undefined) {
-				newContent += '<h7 class="card-title text-center">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
+				newFeatures += '<h7 class="card-title text-center">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
 			}
 			// for loop for authors
 			// newFeatures += '<span class="card-text"><small class="text-muted text-center">Author(s): </small></span> ';

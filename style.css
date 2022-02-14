@@ -10,9 +10,15 @@ div#navbarNav {
     justify-content: center;
 }
 
+ul.navbar-nav {
+    border: 0.8px solid;
+    box-shadow: 5px 10px;
+}
+
 li.nav-item {
-    margin-right: 10px;
-    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0.8px solid;
 }
 
 /*- All books section -*/
