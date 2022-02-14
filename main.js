@@ -15,14 +15,14 @@ function renderFeatures(responseObject){
 	for(let i = 0; i < responseObject.items.length; i++){
 		if(i >= responseObject.items.length - 2){
 			newFeatures += '<div class="card features">';
-			newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
+			// newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '<div class="card-body">';
 			newFeatures += '<h6 class="card-title text-center">' + responseObject.items[i].volumeInfo.title + '</h6>';
 			// Subtitle
 			var subtitle = responseObject.items[i].volumeInfo.subtitle;
 			// if statement to check if a subtitle exists for current item
 			if (subtitle != undefined) {
-				newFeatures += '<h7 class="card-title text-center">' + responseObject.items[i].volumeInfo.subtitle + '</h7>';
+				newFeatures += '<p class="text-center">' + responseObject.items[i].volumeInfo.subtitle + '</p>';
 			}
 			// for loop for authors
 			// newFeatures += '<span class="card-text"><small class="text-muted text-center">Author(s): </small></span> ';
@@ -34,6 +34,7 @@ function renderFeatures(responseObject){
 			// decription
 			// Substring used to restrict the description to 140 characters
 			newFeatures += '<p class="card-text text-center">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
+			newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '</div>';
 			newFeatures += '</div>';
 			newFeatures += '</div>';
