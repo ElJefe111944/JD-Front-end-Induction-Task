@@ -1,4 +1,5 @@
 var xhr = new XMLHttpRequest();  // Create XMLHttpRequest object
+var features = document.getElementById("features");  // all feature cards targetted
 
 xhr.onload = function(){
     // console.log(xhr.responseText);  // Test to verify that API has been retrived
@@ -14,7 +15,7 @@ function renderFeatures(responseObject){
 
 	for(let i = 0; i < responseObject.items.length; i++){
 		if(i >= 8){
-			newFeatures += '<div class="card features">';
+			newFeatures += '<div class="card features" onclick=activateFeatures()>';
 			// newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '<div class="card-body">';
 			newFeatures += '<h6 class="card-title text-center">' + responseObject.items[i].volumeInfo.title + '</h6>';
@@ -47,6 +48,12 @@ function renderFeatures(responseObject){
 	};
 
 };
+// when user clicks on features card
+function activateFeatures(){
+	
+}
+
+
 
 // All books
 function renderItems(responseObject){
