@@ -13,7 +13,7 @@ function renderFeatures(responseObject){
 	var newFeatures = "";  // Empty string for innerHTML to be pased through
 
 	for(let i = 0; i < responseObject.items.length; i++){
-		if(i >= responseObject.items.length - 2){
+		if(i >= 8){
 			newFeatures += '<div class="card features">';
 			// newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '<div class="card-body">';
