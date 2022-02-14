@@ -1,5 +1,15 @@
 
 
+/*- Header -*/
+.social-media {
+    font-size: 25px;
+}
+
+/*- Logo -*/
+i.fa-solid.fa-book-open {
+    color: #b3b3b3;
+}
+
 /*- Nav Bar -*/
 nav.navbar.navbar-expand-lg.navbar-light.bg-white {
     margin: 30px;
