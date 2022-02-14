@@ -106,7 +106,10 @@ img.card-img-top {
 }
 
 
-@media (max-width: 992px){  
+@media (max-width: 992px){
+    .social-media {
+        font-size: 15px;
+    }  
     div#books {
         display: grid;
         grid-template-columns: 1fr;

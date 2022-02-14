@@ -30,10 +30,11 @@ function renderFeatures(responseObject){
 			// for loop for authors
 			// newFeatures += '<span class="card-text"><small class="text-muted text-center">Author(s): </small></span> ';
 			// for loop for authors
-			newFeatures += '<p class="card-text authors-features text-center"><small class="text-muted">Author(s): </small> ';
+			newFeatures += '<p class="card-text authors-features text-center"><small class="text-muted">Author(s): ';
 			for (let ii = 0; ii < responseObject.items[i].volumeInfo.authors.length; ii++) {
-				newFeatures += '<span class="text-center"><small class="text-muted">' + responseObject.items[i].volumeInfo.authors[ii] + '</small></span></p>';
+				newFeatures += ' ' + responseObject.items[i].volumeInfo.authors[ii] + ' ';
 			}
+			newFeatures += '</small></p>';
 			// page count                
 			newFeatures += '<p class="card-text text-center"><small>Number of pages: ' + responseObject.items[i].volumeInfo.pageCount + '</small></p>';
 			// decription
