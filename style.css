@@ -20,6 +20,9 @@ li.nav-item {
     padding-right: 10px;
     border: 0.8px solid;
 }
+.navbar-light .navbar-nav .nav-link {
+    color: black!important;
+}
 
 /*- All books section -*/
 
