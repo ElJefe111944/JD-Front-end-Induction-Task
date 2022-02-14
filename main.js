@@ -1,3 +1,5 @@
+// File validated using Beautify tools (Javascript validator)
+
 var xhr = new XMLHttpRequest();  // Create XMLHttpRequest object
 var features = document.getElementsByClassName("features");  // all feature cards 
 var books = document.getElementsByClassName("all-books")  // all books cars 
