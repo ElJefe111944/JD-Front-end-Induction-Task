@@ -1,5 +1,4 @@
 
-
 /*- Header -*/
 .social-media {
     font-size: 25px;
@@ -73,6 +72,11 @@ img.card-img-top {
 .card.features {
     margin-top: 20px;
 }
+
+.authors-features p {
+    font-size: 10px;
+}
+
 
 /*- Is Selected -*/
 .is-selected {
