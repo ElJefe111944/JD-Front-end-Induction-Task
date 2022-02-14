@@ -44,13 +44,16 @@ function renderFeatures(responseObject){
 
 		};
 		document.getElementById("features").innerHTML = newFeatures;
+		for (let i = 0; i < features.length; i++){
+			productCards[i].addEventListener("click", isSelected);
+		}
 
 	};
 
 };
 // when user clicks on features card
 function activateFeatures(){
-	
+
 }
 
 
@@ -100,6 +103,15 @@ function renderItems(responseObject){
 
 }
 
+function isSelected(){
+    if(this.classList.contains("is-selected")){
+        this.classList.remove("is-selected");
+        sessionStorage.setItem('Is selected', 'False');
+    } else {
+        this.classList.add("is-selected");
+        sessionStorage.setItem('Is selected', 'True');
+    }
+} 
     
 
 xhr.open("GET", "https://www.googleapis.com/books/v1/volumes?q=HTML5");  // Prepare request
