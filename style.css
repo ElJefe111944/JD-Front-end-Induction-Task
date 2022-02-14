@@ -47,6 +47,7 @@ button.navbar-toggler {
 
 /*- All books section -*/
 
+
 div#books {
     display: grid;
     grid-template-columns: 1fr 1fr;
