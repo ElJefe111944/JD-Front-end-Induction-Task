@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();  // Create XMLHttpRequest object
-var features = document.getElementById("features");  // all feature cards targetted
+
 
 xhr.onload = function(){
     // console.log(xhr.responseText);  // Test to verify that API has been retrived
@@ -42,18 +42,23 @@ function renderFeatures(responseObject){
 
 
 
-		};
-		document.getElementById("features").innerHTML = newFeatures;
-		for (let i = 0; i < features.length; i++){
-			productCards[i].addEventListener("click", isSelected);
 		}
+		document.getElementById("features").innerHTML = newFeatures;
 
-	};
+}
 
-};
+}
+
+	
+
+
+var features = document.getElementsByClassName("features");  // all feature cards targetted
+	
 // when user clicks on features card
 function activateFeatures(){
-
+	for (let i = 0; i < features.length; i++){
+		features[i].addEventListener("click", isSelected);
+	}
 }
 
 
@@ -103,6 +108,9 @@ function renderItems(responseObject){
 
 }
 
+// When a card element is clicked on
+// Function adds/removes is-selected class
+// function adds to session storage
 function isSelected(){
     if(this.classList.contains("is-selected")){
         this.classList.remove("is-selected");
