@@ -74,6 +74,11 @@ img.card-img-top {
     margin-top: 20px;
 }
 
+/*- Is Selected -*/
+.is-selected {
+    border: 1px solid rgb(0, 0, 0)!important;
+}
+
 
 /*- Media Queries -*/
 @media (max-width:1200px) {
