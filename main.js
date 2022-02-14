@@ -22,12 +22,12 @@ function renderFeatures(responseObject){
 			newFeatures += '<div class="card features" onclick=activateFeatures()>';
 			// newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '<div class="card-body">';
-			newFeatures += '<h6 class="card-title text-center">' + responseObject.items[i].volumeInfo.title + '</h6>';
+			newFeatures += '<h6 class="card-title feature-title text-center">' + responseObject.items[i].volumeInfo.title + '</h6>';
 			// Subtitle
 			var subtitle = responseObject.items[i].volumeInfo.subtitle;
 			// if statement to check if a subtitle exists for current item
 			if (subtitle != undefined) {
-				newFeatures += '<p class="text-center">' + responseObject.items[i].volumeInfo.subtitle + '</p>';
+				newFeatures += '<p class="text-center feature-subtitle">' + responseObject.items[i].volumeInfo.subtitle + '</p>';
 			}
 			// for loop for authors
 			// newFeatures += '<span class="card-text"><small class="text-muted text-center">Author(s): </small></span> ';
@@ -41,7 +41,7 @@ function renderFeatures(responseObject){
 			newFeatures += '<p class="card-text text-center"><small>Number of pages: ' + responseObject.items[i].volumeInfo.pageCount + '</small></p>';
 			// decription
 			// Substring used to restrict the description to 140 characters
-			newFeatures += '<p class="card-text text-center">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
+			newFeatures += '<p class="card-text feature-description text-center">' + responseObject.items[i].volumeInfo.description.substring(0, 140) + "...." + '</p>';
 			newFeatures += '<img src="' + responseObject.items[i].volumeInfo.imageLinks.smallThumbnail + '" class="card-img-top" alt="...">';
 			newFeatures += '</div>';
 			newFeatures += '</div>';

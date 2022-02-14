@@ -6,6 +6,12 @@
     font-size: 25px;
 }
 
+i.fa-brands {
+    margin: 5px;
+    float: right;
+    font-size: 14px;
+}
+
 /*- Logo -*/
 i.fa-solid.fa-book-open {
     color: #b3b3b3;
@@ -33,6 +39,10 @@ li.nav-item {
 }
 .navbar-light .navbar-nav .nav-link {
     color: black!important;
+}
+
+button.navbar-toggler {
+    margin: 10px;
 }
 
 /*- All books section -*/
@@ -65,6 +75,13 @@ img.img-fluid.rounded-start {
     padding: 20px;
 }
 
+h6.card-title.feature-title.text-center {
+    font-size: 18px;
+}
+p.card-text.feature-description.text-center {
+    font-size: 18px;
+}
+
 img.card-img-top {
     width: 55%;
     margin-left: 25%;
@@ -72,6 +89,7 @@ img.card-img-top {
 }
 
 .card.features {
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -109,9 +127,7 @@ img.card-img-top {
 
 
 @media (max-width: 992px){
-    .social-media {
-        font-size: 10px;
-    }  
+   
     div#books {
         display: grid;
         grid-template-columns: 1fr;
@@ -139,5 +155,14 @@ img.card-img-top {
 
     p.card-text {
         font-size: 11px;
+    }
+    h6.card-title.feature-title.text-center {
+        font-size: 14px;
+    }
+    p.card-text.feature-description.text-center {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
     }
 }
