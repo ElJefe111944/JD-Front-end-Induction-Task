@@ -1,4 +1,6 @@
 var xhr = new XMLHttpRequest();  // Create XMLHttpRequest object
+var features = document.getElementsByClassName("features");  // all feature cards 
+var books = document.getElementsByClassName("all-books")  // all books cars 
 
 
 xhr.onload = function(){
@@ -46,13 +48,8 @@ function renderFeatures(responseObject){
 		document.getElementById("features").innerHTML = newFeatures;
 
 }
-
 }
 
-	
-
-
-var features = document.getElementsByClassName("features");  // all feature cards targetted
 	
 // when user clicks on features card
 function activateFeatures(){
@@ -72,7 +69,7 @@ function renderItems(responseObject){
     // for loop to loop through each book 
     for (let i = 0; i < responseObject.items.length -2; i++){
         // Start of card 
-        newContent += '<div class="card all-books mb-3" id="card">';
+        newContent += '<div class="card all-books mb-3" id="card" onclick=activateItem()>';
 		newContent += '<div class="row g-0">';
 		newContent += '<div class="col-4">';
 		// image
@@ -107,6 +104,14 @@ function renderItems(responseObject){
     document.getElementById("books").innerHTML = newContent;  // Update index page with new content
 
 }
+
+// when user clicks on book card
+function activateItem(){
+	for (let i = 0; i < books.length; i++){
+		books[i].addEventListener("click", isSelected);
+	}
+}
+
 
 // When a card element is clicked on
 // Function adds/removes is-selected class
